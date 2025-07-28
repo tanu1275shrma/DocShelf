@@ -1,0 +1,25 @@
+.pastel-gradient {
+  background-image: url("/images/bg.setup.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.pastel-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("/images/bg.setupp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(4px);
+  z-index: -1;
+}
